@@ -40,7 +40,7 @@ fs.readdir(PATH, (err, items) => {
     items
         .filter(name => name.endsWith('.svg'))
         .forEach(name => {
-            let nameCamel = pascalCase(name.replace('.svg', '')).replace(/_(\d)/g, '$1');
+            let nameCamel = pascalCase(name.replace('.svg', '')).replace(/_(\d)/g, '$1') + 'Icon';
             let content = fs.readFileSync(`${PATH}/${name}`, 'utf-8').replace(/\n/gm, ' ');
             let component = componentTemplate(nameCamel, content);
             let filePath = path.resolve(`${jsxOutDir}/${nameCamel}.js`);
