@@ -1,5 +1,13 @@
 # Tabler Icons as Vue components
 
+<details>
+    <summary>Preview icons</summary>
+    <p>
+![Tabler Icons](https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/icons.png)
+    </p>
+</details>
+
+
 ## Installation
 
 ```bash
