@@ -4,7 +4,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/alex-oleshkevich/vue-feather-icons"
+        "url": "https://github.com/alex-oleshkevich/vue-tabler-icons"
     },
     "scripts": {
         "make:jsx": "node build.js",
