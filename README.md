@@ -1,5 +1,7 @@
 # Tabler Icons as Vue components
 
+[Live preview tool](https://tablericons.com/)
+
 <details>
     <summary>Preview icons</summary>
     <p>
