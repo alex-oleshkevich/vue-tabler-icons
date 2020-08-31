@@ -1,0 +1,33 @@
+{
+    "name": "vue-tabler-icons",
+    "version": "1.15.0",
+    "license": "MIT",
+    "scripts": {
+        "make:jsx": "node build.js",
+        "make:components": "babel ./jsx -d icons",
+        "build": "npm run make:jsx && npm run make:components"
+    },
+    "author": {
+        "email": "alex.oleshkevich@gmail.com",
+        "name": "Alex Oleshkevich"
+    },
+    "main": "./index.js",
+    "dependencies": {
+        "@babel/cli": "^7.10.5",
+        "@babel/core": "^7.11.4",
+        "fs-extra": "^9.0.1",
+        "pascal-case": "^3.1.1",
+        "poi": "^12.10.2",
+        "tabler-icons": "1.15.0"
+    },
+    "babel": {
+        "presets": [
+            [
+                "poi/babel",
+                {
+                    "jsx": "vue"
+                }
+            ]
+        ]
+    }
+}
