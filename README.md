@@ -28,6 +28,8 @@ npm i vue-tabler-icons
 </template>
 ```
 
+Installation via CDN is not supported yet.
+
 ## Naming pattern
 
 Component names use the same names as defined in the original library with some rules applied:
@@ -65,6 +67,25 @@ All icons use `currentColor` as their color. You can colorize your icons as you 
 <bold-icon style="color: red" />
 <bold-icon class="text-red" />
 ```
+
+## Building locally
+
+Clone repo:
+```bash
+git clone https://github.com/alex-oleshkevich/vue-feather-icons.git
+```
+
+Install deps:
+``bash
+yarn install
+```
+
+Run build
+```bash
+yarn build
+```
+
+Icon component will be in `icons` directory.
 
 ## Credits
 
