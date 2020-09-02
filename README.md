@@ -40,6 +40,27 @@ npm i vue-tabler-icons
 </template>
 ```
 
+### Using Vue plugin
+
+You may install a Vue plugin that automatically adds all components to the Vue instance.
+
+```js
+import Vue from 'vue';
+import VueTablerIcons from 'vue-tabler-icons';
+
+Vue.use(VueTablerIcons);
+```
+
+Now you can use icons without importing them:
+
+```html
+<template>
+    <trash-icon />
+</template>
+```
+
+### Using CDN
+
 Installation via CDN is not supported yet.
 
 ## Naming pattern
@@ -53,6 +74,15 @@ Component names use the same names as defined in the original library with some 
 For example:
 
 `arrows-diagonal-2` will become `ArrowsDiagonal2Icon`.
+
+### Replacements
+
+Following icon names are replaced to match JavaScript variable name pattern:
+
+| Original | New           |
+|----------|---------------|
+| 2fa.svg  | TwoFactorAuth |
+
 
 ## Icon size
 
