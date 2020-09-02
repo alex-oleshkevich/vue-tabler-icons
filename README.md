@@ -27,7 +27,6 @@ npm i vue-tabler-icons
 ```html
 <script>
     // MyComponent.vue
-
     import { BoldIcon } from 'vue-tabler-icons';
 
     export default {
