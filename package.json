@@ -1,6 +1,6 @@
 {
     "name": "vue-tabler-icons",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -9,7 +9,8 @@
     "scripts": {
         "make:jsx": "node build.js",
         "make:components": "babel ./jsx -d icons",
-        "build": "npm run make:jsx && npm run make:components"
+        "build": "npm run make:jsx && npm run make:components",
+        "release": "npm run build && npm publish"
     },
     "author": {
         "email": "alex.oleshkevich@gmail.com",

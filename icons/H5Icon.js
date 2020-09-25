@@ -30,7 +30,8 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
     }), "   ", h("line", {
       attrs: {
@@ -55,7 +56,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M16 18.27 a3 3 0 1 0 0 -4.537 l0 -4.733 h 5"
+        d: "M16 18.27a3 3 0 1 0 0 -4.537l0 -4.733h5"
       }
     }), " "]);
   }

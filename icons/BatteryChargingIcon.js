@@ -30,7 +30,8 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
     }), "   ", h("path", {
       attrs: {
@@ -38,11 +39,11 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M8 7H6a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h1"
+        d: "M8 7h-2a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h1"
       }
-    }), "   ", h("polyline", {
+    }), "   ", h("path", {
       attrs: {
-        points: "12 8 10 12 13 12 11 16"
+        d: "M12 8l-2 4h3l-2 4"
       }
     }), " "]);
   }

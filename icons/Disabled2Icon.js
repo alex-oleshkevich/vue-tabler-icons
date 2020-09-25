@@ -30,7 +30,8 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
     }), "   ", h("circle", {
       attrs: {
@@ -40,7 +41,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M9 11a4.97 4.97 0 1 0 3.95 7.95"
+        d: "M9 11a5 5 0 1 0 3.95 7.95"
       }
     }), "   ", h("path", {
       attrs: {

@@ -6600,9 +6600,9 @@ svgo@^1.0.0:
     util.promisify "~1.0.0"
 
 tabler-icons@^1.15.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/tabler-icons/-/tabler-icons-1.17.0.tgz#c00754218772bab636946fdeb58c9065c78dd733"
-  integrity sha512-/Z6SoXCrehlHBrtap3dUldQhfYDsvHFY5TnBXH8SIYVkn4GNft44TjN+smQEXBbKTW2mPjudi0I36N91lOEuew==
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/tabler-icons/-/tabler-icons-1.26.0.tgz#4d72c2b7fae2d6d0a4c914f5bf9c7227034629ee"
+  integrity sha512-4AJOoRScqSaTVzErHptcuoFC9BvGifAzwABnpYqcIagftJVzXJw7ycjVm6/PWPrZQlq6rUjhogimCu4ztHpLuw==
 
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"

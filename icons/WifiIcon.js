@@ -30,13 +30,10 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
-    }), "   ", h("g", {
-      attrs: {
-        transform: "rotate(-45 12 18)"
-      }
-    }, ["   ", h("line", {
+    }), "   ", h("line", {
       attrs: {
         x1: "12",
         y1: "18",
@@ -45,16 +42,16 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M12 14a4 4 0 0 1 4 4"
+        d: "M9.172 15.172a4 4 0 0 1 5.656 0"
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M12 10a8 8 0 0 1 8 8"
+        d: "M6.343 12.343a8 8 0 0 1 11.314 0"
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M12 6a12 12 0 0 1 12 12"
+        d: "M3.515 9.515c4.686-4.687 12.284-4.687 17 0"
       }
-    }), "   "]), " "]);
+    }), " "]);
   }
 };

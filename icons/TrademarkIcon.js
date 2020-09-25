@@ -30,11 +30,12 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M4.5 9 h5m-2.5 0v6"
+        d: "M4.5 9h5m-2.5 0v6"
       }
     }), "   ", h("path", {
       attrs: {

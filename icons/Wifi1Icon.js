@@ -30,13 +30,10 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
-    }), "   ", h("g", {
-      attrs: {
-        transform: "rotate(-45 12 18)"
-      }
-    }, ["   ", h("line", {
+    }), "   ", h("line", {
       attrs: {
         x1: "12",
         y1: "18",
@@ -45,8 +42,8 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M12 14a4 4 0 0 1 4 4"
+        d: "M9.172 15.172a4 4 0 0 1 5.656 0"
       }
-    }), "   "]), " "]);
+    }), " "]);
   }
 };

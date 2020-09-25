@@ -30,11 +30,12 @@ export default {
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
     }), "   ", h("polyline", {
       attrs: {
-        points: "6 8 18 16 12 20 12 4 18 8 6 16"
+        points: "7 8 17 16 12 20 12 4 17 8 7 16"
       }
     }), " "]);
   }
