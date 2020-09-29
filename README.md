@@ -118,7 +118,7 @@ git clone https://github.com/alex-oleshkevich/vue-feather-icons.git
 ```
 
 Install deps:
-``bash
+```bash
 yarn install
 ```
 
