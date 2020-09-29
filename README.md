@@ -81,6 +81,7 @@ Following icon names are replaced to match JavaScript variable name pattern:
 | Original | New           |
 |----------|---------------|
 | 2fa.svg  | TwoFactorAuth |
+| 3d-cube-sphere.svg  | ThreedCubeSphereIcon |
 
 
 ## Icon size
