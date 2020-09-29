@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: '3dCubeSphereIcon',
+  name: 'ThreedCubeSphereIcon',
   props: {
     size: {
       type: String,

@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'TrackPrevIcon',
+  name: 'PlayerTrackPrevIcon',
   props: {
     size: {
       type: String,
@@ -26,7 +26,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-track-prev"
+      "class": "icon icon-tabler icon-tabler-player-track-prev"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
@@ -35,7 +35,11 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M10.31 19.802l-6.56 -6.249c-1 -.799 -1 -2.307 0 -3.106l6.564 -6.252c.67 -.48 1.686 0 1.686 .805v4l5.394 -4.808c.669 -.478 1.606 0 1.606 .808v14c0 .812 -.936 1.285 -1.602 .809l-5.398 -4.809v4c0 .816 -1.02 1.281 -1.69 .802z"
+        d: "M21 5v14l-8 -7z"
+      }
+    }), "   ", h("path", {
+      attrs: {
+        d: "M10 5v14l-8 -7z"
       }
     }), " "]);
   }

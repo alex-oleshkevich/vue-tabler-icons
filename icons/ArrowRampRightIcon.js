@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'ArrowRampRightIcon',
   props: {
     size: {
       type: String,
@@ -26,7 +26,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-arrow-ramp-right"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
@@ -35,31 +35,22 @@ export default {
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        x1: "7",
+        y1: "3",
+        x2: "7",
+        y2: "11.707"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
+        d: "M11 7l-4 -4l-4 4"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
+        d: "M17 14l4 -4l-4 -4"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        d: "M7 21a11 11 0 0 1 11 -11h3"
       }
     }), " "]);
   }

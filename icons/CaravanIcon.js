@@ -39,9 +39,12 @@ export default {
         cy: "17",
         r: "2"
       }
-    }), "   ", h("path", {
+    }), "   ", h("line", {
       attrs: {
-        d: "M21 17h-8"
+        x1: "21",
+        y1: "17",
+        x2: "13",
+        y2: "17"
       }
     }), "   ", h("path", {
       attrs: {

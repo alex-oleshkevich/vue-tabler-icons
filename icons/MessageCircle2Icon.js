@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'MessageCircle2Icon',
   props: {
     size: {
       type: String,
@@ -26,40 +26,37 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-message-circle-2"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        d: "M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1"
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
+        x1: "12",
+        y1: "12",
+        x2: "12",
+        y2: "12.01"
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
+        x1: "8",
+        y1: "12",
+        x2: "8",
+        y2: "12.01"
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        x1: "16",
+        y1: "12",
+        x2: "16",
+        y2: "12.01"
       }
     }), " "]);
   }

@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'PlayerSkipForwardIcon',
   props: {
     size: {
       type: String,
@@ -26,40 +26,23 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-player-skip-forward"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        d: "M4 5v14l12 -7z"
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        x1: "20",
+        y1: "5",
+        x2: "20",
+        y2: "19"
       }
     }), " "]);
   }

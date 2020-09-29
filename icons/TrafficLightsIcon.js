@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: '2faIcon',
+  name: 'TrafficLightsIcon',
   props: {
     size: {
       type: String,
@@ -26,37 +26,38 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-2fa"
+      "class": "icon icon-tabler icon-tabler-traffic-lights"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
-    }), "   ", h("path", {
+    }), "   ", h("rect", {
       attrs: {
-        d: "M7 16h-4 l3.47 -4.66 a2 2 0 1 0 -3.47 -1.54"
+        x: "7",
+        y: "2",
+        width: "10",
+        height: "20",
+        rx: "5"
       }
-    }), "   ", h("path", {
+    }), "   ", h("circle", {
       attrs: {
-        d: "M10 16v-8h4"
+        cx: "12",
+        cy: "7",
+        r: "1"
       }
-    }), "   ", h("line", {
+    }), "   ", h("circle", {
       attrs: {
-        x1: "10",
-        y1: "12",
-        x2: "13",
-        y2: "12"
+        cx: "12",
+        cy: "12",
+        r: "1"
       }
-    }), "   ", h("path", {
+    }), "   ", h("circle", {
       attrs: {
-        d: "M17 16v-6a2 2 0 0 1 4 0v6"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "17",
-        y1: "13",
-        x2: "21",
-        y2: "13"
+        cx: "12",
+        cy: "17",
+        r: "1"
       }
     }), " "]);
   }

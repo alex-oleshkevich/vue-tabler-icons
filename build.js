@@ -46,6 +46,7 @@ export default {
 
 const aliases = {
     '2fa.svg': 'two-factor-auth.svg',
+    '3d-cube-sphere.svg': 'threed-cube-sphere.svg',
 }
 
 fs.readdir(PATH, (err, items) => {

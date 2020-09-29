@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'VectorBeizer2Icon',
   props: {
     size: {
       type: String,
@@ -26,40 +26,58 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-vector-beizer-2"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
+    }), "   ", h("rect", {
+      attrs: {
+        x: "3",
+        y: "3",
+        width: "4",
+        height: "4",
+        rx: "1"
+      }
+    }), "   ", h("rect", {
+      attrs: {
+        x: "17",
+        y: "17",
+        width: "4",
+        height: "4",
+        rx: "1"
+      }
     }), "   ", h("line", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        x1: "7",
+        y1: "5",
+        x2: "14",
+        y2: "5"
       }
     }), "   ", h("line", {
       attrs: {
         x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
+        y1: "19",
+        x2: "17",
+        y2: "19"
       }
-    }), "   ", h("line", {
+    }), "   ", h("circle", {
       attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
+        cx: "9",
+        cy: "19",
+        r: "1"
       }
-    }), "   ", h("line", {
+    }), "   ", h("circle", {
       attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        cx: "15",
+        cy: "5",
+        r: "1"
+      }
+    }), "   ", h("path", {
+      attrs: {
+        d: "M7 5.5a5 6.5 0 0 1 5 6.5a5 6.5 0 0 0 5 6.5"
       }
     }), " "]);
   }

@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'LeafIcon',
   props: {
     size: {
       type: String,
@@ -26,40 +26,20 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-leaf"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        d: "M5 21c.5 -4.5 2.5 -8 7 -10"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        d: "M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z"
       }
     }), " "]);
   }

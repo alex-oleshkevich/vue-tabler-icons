@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'CloudOffIcon',
   props: {
     size: {
       type: String,
@@ -26,7 +26,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-cloud-off"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
@@ -35,31 +35,14 @@ export default {
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        x1: "3",
+        y1: "3",
+        x2: "21",
+        y2: "21"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        d: "M18 18h-11c-2.598 0 -4.705 -2.015 -4.705 -4.5s2.107 -4.5 4.705 -4.5c.112 -.5 .305 -.973 .568 -1.408m2.094 -1.948c.329 -.174 .68 -.319 1.05 -.43c1.9 -.576 3.997 -.194 5.5 1c1.503 1.192 2.185 3.017 1.788 4.786h1a3.5 3.5 0 0 1 2.212 6.212"
       }
     }), " "]);
   }

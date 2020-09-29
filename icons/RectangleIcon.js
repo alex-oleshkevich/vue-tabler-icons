@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'SkipForwardIcon',
+  name: 'RectangleIcon',
   props: {
     size: {
       type: String,
@@ -26,23 +26,20 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-skip-forward"
+      "class": "icon icon-tabler icon-tabler-rectangle"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("path", {
+    }), "   ", h("rect", {
       attrs: {
-        d: "M4 6v12a2 2 0 0 0 2.75 1.84l8.25 -6.1a2 2 0 0 0 0 -3.5l-8.25 -6.1a2 2 0 0 0 -2.75 1.75"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "20",
-        y1: "4",
-        x2: "20",
-        y2: "20"
+        x: "3",
+        y: "5",
+        width: "18",
+        height: "14",
+        rx: "2"
       }
     }), " "]);
   }

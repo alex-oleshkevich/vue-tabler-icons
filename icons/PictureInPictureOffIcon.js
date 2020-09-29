@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'PictureInPictureOffIcon',
   props: {
     size: {
       type: String,
@@ -26,40 +26,35 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-picture-in-picture-off"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        d: "M11 19h-6a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4"
+      }
+    }), "   ", h("rect", {
+      attrs: {
+        x: "14",
+        y: "14",
+        width: "7",
+        height: "5",
+        rx: "1"
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
+        x1: "7",
+        y1: "9",
+        x2: "11",
+        y2: "13"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        d: "M7 12v-3h3"
       }
     }), " "]);
   }

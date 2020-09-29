@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'SkipBackIcon',
+  name: 'PlayerStopIcon',
   props: {
     size: {
       type: String,
@@ -26,20 +26,20 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-skip-back"
+      "class": "icon icon-tabler icon-tabler-player-stop"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("path", {
+    }), "   ", h("rect", {
       attrs: {
-        d: "M20 18v-12a2 2 0 0 0 -2.75 -1.84l-8.25 6.1a2 2 0 0 0 0 3.5l8.25 6.1a2 2 0 0 0 2.75 -1.75"
-      }
-    }), "   ", h("path", {
-      attrs: {
-        d: "M4 20v-16"
+        x: "5",
+        y: "5",
+        width: "14",
+        height: "14",
+        rx: "2"
       }
     }), " "]);
   }

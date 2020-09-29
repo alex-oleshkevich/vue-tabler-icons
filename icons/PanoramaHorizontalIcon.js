@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'ElectricScooterIcon',
+  name: 'PanoramaHorizontalIcon',
   props: {
     size: {
       type: String,
@@ -26,27 +26,16 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-electric-scooter"
+      "class": "icon icon-tabler icon-tabler-panorama-horizontal"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
-        d: "M0 0h24v24H0z"
-      }
-    }), "   ", h("circle", {
-      attrs: {
-        cx: "18",
-        cy: "17",
-        r: "2"
-      }
-    }), "   ", h("circle", {
-      attrs: {
-        cx: "6",
-        cy: "17",
-        r: "2"
+        d: "M0 0h24v24H0z",
+        fill: "none"
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M8 17h5a6 6 0 0 1 5 -5v-5a2 2 0 0 0 -2 -2h-1"
+        d: "M4.338 5.53c5.106 1.932 10.211 1.932 15.317 .002a1 1 0 0 1 1.345 .934v11c0 .692 -.692 1.2 -1.34 .962c-5.107 -1.932 -10.214 -1.932 -15.321 0c-.648 .246 -1.339 -.242 -1.339 -.935v-11.027a1 1 0 0 1 1.338 -.935z"
       }
     }), " "]);
   }

@@ -33,13 +33,19 @@ export default {
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("path", {
+    }), "   ", h("line", {
       attrs: {
-        d: "M21 4h-18"
+        x1: "21",
+        y1: "4",
+        x2: "3",
+        y2: "4"
       }
-    }), "   ", h("path", {
+    }), "   ", h("line", {
       attrs: {
-        d: "M13 16h-6"
+        x1: "13",
+        y1: "16",
+        x2: "7",
+        y2: "16"
       }
     }), "   ", h("line", {
       attrs: {

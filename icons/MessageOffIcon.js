@@ -1,6 +1,6 @@
 import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'AntennaBars4Icon',
+  name: 'MessageOffIcon',
   props: {
     size: {
       type: String,
@@ -26,7 +26,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-antenna-bars-4"
+      "class": "icon icon-tabler icon-tabler-message-off"
     }, ctx.data]), ["   ", h("path", {
       attrs: {
         stroke: "none",
@@ -35,31 +35,14 @@ export default {
       }
     }), "   ", h("line", {
       attrs: {
-        x1: "6",
-        y1: "18",
-        x2: "6",
-        y2: "15"
+        x1: "3",
+        y1: "3",
+        x2: "21",
+        y2: "21"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "10",
-        y1: "18",
-        x2: "10",
-        y2: "12"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "14",
-        y1: "18",
-        x2: "14",
-        y2: "9"
-      }
-    }), "   ", h("line", {
-      attrs: {
-        x1: "18",
-        y1: "18",
-        x2: "18",
-        y2: "18.01"
+        d: "M17 17h-9l-4 4v-13c0 -1.086 .577 -2.036 1.44 -2.563m3.561 -.437h8a3 3 0 0 1 3 3v6c0 .575 -.162 1.112 -.442 1.568"
       }
     }), " "]);
   }
