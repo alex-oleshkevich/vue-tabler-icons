@@ -25,7 +25,9 @@
         "fs-extra": "^9.0.1",
         "pascal-case": "^3.1.1",
         "poi": "^12.10.2",
-        "tabler-icons": "^1.15.0"
+        "tabler-icons": "^1.15.0",
+        "vue": "2.6.12",
+        "vue-template-compiler": "2.6.12"
     },
     "babel": {
         "presets": [
