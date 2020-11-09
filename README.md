@@ -110,6 +110,15 @@ All icons use `currentColor` as their color. You can colorize your icons as you 
 <bold-icon class="text-red" />
 ```
 
+## Stroke width and other SVG attributes
+
+Any custom attribute that set on the component will be applied directly to the SVG asset.
+For example, if you want to set `stroke-width` attribute just set it as usually:
+
+```html
+<bold-icon stroke-width="1" />
+```
+
 ## Building locally
 
 Clone repo:
