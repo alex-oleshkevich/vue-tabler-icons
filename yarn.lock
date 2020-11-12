@@ -1080,6 +1080,11 @@
   resolved "https://registry.yarnpkg.com/@poi/pnp-webpack-plugin/-/pnp-webpack-plugin-0.0.2.tgz#4633d4445637a2ed3b3da7f831ea7ee38587e6d7"
   integrity sha512-5yqBjV6yZzrJBYVG6ASAbhRhAQMjEu1nYDPJFbpPDcfNxEvsO+QwIxFq3ABQwH0iq59nI62v8VtxEc/z+jDFOg==
 
+"@tabler/icons@^1.35.0":
+  version "1.35.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.35.0.tgz#a9549c7f8e6ab9bedb1d0b75258da26d4c57c7a6"
+  integrity sha512-g3b6wu6IGcaoSc63RylAF4kc5TwMHNeV4sLZ/JcZZHWKMhJKSBwgXVZbaQxZ/x/BUv9SSn5bzudXUrZ1YG48rw==
+
 "@types/anymatch@*":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
@@ -6906,11 +6911,6 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
-
-tabler-icons@^1.15.0:
-  version "1.35.0"
-  resolved "https://registry.npmjs.org/tabler-icons/-/tabler-icons-1.35.0.tgz#84afc81b8814ddbe468066182177d25a4def918f"
-  integrity sha512-8ZbCA3oVQAsVYljvA4UiGRdB01hKqjFcbVTViw5y2Hs2SSpZ/iMB2XYbDZkfB8TqWAXvsho272avD5rYe3wXaw==
 
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"

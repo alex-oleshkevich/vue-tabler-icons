@@ -4,7 +4,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { pascalCase } = require('pascal-case');
 
-const PATH = path.resolve('node_modules/tabler-icons/icons');
+const PATH = path.resolve('node_modules/@tabler/icons/icons');
 
 const jsxOutDir = './jsx';
 
