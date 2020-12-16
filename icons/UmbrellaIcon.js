@@ -35,7 +35,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M4 12a8 8 0 0 1 16 0Z"
+        d: "M4 12a8 8 0 0 1 16 0z"
       }
     }), "   ", h("path", {
       attrs: {

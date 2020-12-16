@@ -35,11 +35,11 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M11 21l1-5-1-4-3-4h4l3-3"
+        d: "M11 21l1 -5l-1 -4l-3 -4h4l3 -3"
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M6 16l-1-4l3-4"
+        d: "M6 16l-1 -4l3 -4"
       }
     }), "   ", h("circle", {
       attrs: {

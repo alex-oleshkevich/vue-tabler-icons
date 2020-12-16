@@ -50,7 +50,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M14 10l3.5-3.5"
+        d: "M14 10l3.5 -3.5"
       }
     }), "   ", h("path", {
       attrs: {

@@ -48,7 +48,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M7 11.5l3-3"
+        d: "M7 11.5l3 -3"
       }
     }), "   ", h("line", {
       attrs: {
@@ -59,7 +59,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M14 11.5l3-3"
+        d: "M14 11.5l3 -3"
       }
     }), "   ", h("path", {
       attrs: {

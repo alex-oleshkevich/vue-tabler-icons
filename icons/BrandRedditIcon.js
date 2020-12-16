@@ -39,7 +39,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M12 8l1-5 6 1"
+        d: "M12 8l1 -5l6 1"
       }
     }), "   ", h("circle", {
       attrs: {

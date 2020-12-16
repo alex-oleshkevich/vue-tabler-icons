@@ -41,7 +41,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M5 22v-5l-1-1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5"
+        d: "M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5"
       }
     }), "   ", h("circle", {
       attrs: {

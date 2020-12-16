@@ -35,7 +35,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M18 15l-6-6l-6 6h12",
+        d: "M18 15l-6 -6l-6 6h12",
         transform: "rotate(270 12 12)"
       }
     }), " "]);

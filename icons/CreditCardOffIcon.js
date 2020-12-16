@@ -42,7 +42,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M9 5h9a3 3 0 0 1 3 3v8a3 3 0 0 1 -.128.87 1"
+        d: "M9 5h9a3 3 0 0 1 3 3v8a3 3 0 0 1 -.128 .87"
       }
     }), "   ", h("path", {
       attrs: {

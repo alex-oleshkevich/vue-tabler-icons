@@ -64,7 +64,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M16 9l5-5"
+        d: "M16 9l5 -5"
       }
     }), " "]);
   }

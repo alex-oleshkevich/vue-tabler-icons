@@ -35,7 +35,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M3 21v-13l9-4l9 4v13"
+        d: "M3 21v-13l9 -4l9 4v13"
       }
     }), "   ", h("path", {
       attrs: {

@@ -43,7 +43,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M2.5 10l9.5 3 9.5-3"
+        d: "M2.5 10l9.5 3l9.5 -3"
       }
     }), "   ", h("path", {
       attrs: {
@@ -51,7 +51,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M6 21l6-8"
+        d: "M6 21l6 -8"
       }
     }), " "]);
   }

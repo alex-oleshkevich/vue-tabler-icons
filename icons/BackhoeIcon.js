@@ -61,7 +61,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M8 12V7h2a3 3 0 0 1 3 3v5"
+        d: "M8 12v-5h2a3 3 0 0 1 3 3v5"
       }
     }), "   ", h("path", {
       attrs: {

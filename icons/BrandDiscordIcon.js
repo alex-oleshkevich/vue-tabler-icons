@@ -47,7 +47,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M7.5 7.5c3.5-1 5.5-1 9 0"
+        d: "M7.5 7.5c3.5 -1 5.5 -1 9 0"
       }
     }), "   ", h("path", {
       attrs: {

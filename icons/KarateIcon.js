@@ -45,7 +45,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M13 21v-8l3-5.5"
+        d: "M13 21v-8l3 -5.5"
       }
     }), "   ", h("path", {
       attrs: {

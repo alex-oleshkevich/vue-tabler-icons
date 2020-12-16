@@ -46,7 +46,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M4 12l8-8"
+        d: "M4 12l8 -8"
       }
     }), "   ", h("line", {
       attrs: {

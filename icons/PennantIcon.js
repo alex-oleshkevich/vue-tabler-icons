@@ -49,7 +49,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M10 4l9 4-9 4"
+        d: "M10 4l9 4l-9 4"
       }
     }), " "]);
   }

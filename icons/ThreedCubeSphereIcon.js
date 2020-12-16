@@ -87,7 +87,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M12 12l-2-1.12"
+        d: "M12 12l-2 -1.12"
       }
     }), "   ", h("line", {
       attrs: {

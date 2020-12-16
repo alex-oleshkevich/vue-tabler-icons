@@ -53,7 +53,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M10 13l6-5"
+        d: "M10 13l6 -5"
       }
     }), "   ", h("line", {
       attrs: {

@@ -35,11 +35,11 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M3 9l4-4l4 4m-4 -4v14"
+        d: "M3 9l4 -4l4 4m-4 -4v14"
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M21 15l-4 4l-4-4m4 4v-14"
+        d: "M21 15l-4 4l-4 -4m4 4v-14"
       }
     }), " "]);
   }

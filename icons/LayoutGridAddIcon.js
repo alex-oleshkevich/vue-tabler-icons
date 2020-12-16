@@ -57,13 +57,13 @@ export default {
         height: "6",
         rx: "1"
       }
-    }), "   ", h("rect", {
+    }), "   ", h("path", {
       attrs: {
-        x: "14",
-        y: "14",
-        width: "6",
-        height: "6",
-        rx: "1"
+        d: "M14 17h6"
+      }
+    }), "   ", h("path", {
+      attrs: {
+        d: "M17 14v6"
       }
     }), " "]);
   }

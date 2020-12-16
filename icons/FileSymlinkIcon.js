@@ -39,7 +39,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M9 17l3-3-3-3"
+        d: "M9 17l3 -3l-3 -3"
       }
     }), "   ", h("path", {
       attrs: {

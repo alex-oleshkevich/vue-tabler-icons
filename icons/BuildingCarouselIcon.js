@@ -71,7 +71,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M8 22l4-10 4 10"
+        d: "M8 22l4 -10l4 10"
       }
     }), " "]);
   }
