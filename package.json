@@ -1,6 +1,6 @@
 {
     "name": "vue-tabler-icons",
-    "version": "1.6.1",
+    "version": "1.7.0",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -22,10 +22,10 @@
         "@babel/cli": "^7.10.5",
         "@babel/core": "^7.11.4",
         "@jsdevtools/version-bump-prompt": "^6.1.0",
+        "@tabler/icons": "^1.35.0",
         "fs-extra": "^9.0.1",
         "pascal-case": "^3.1.1",
         "poi": "^12.10.2",
-        "@tabler/icons": "^1.35.0",
         "vue": "2.6.12",
         "vue-template-compiler": "2.6.12"
     },
