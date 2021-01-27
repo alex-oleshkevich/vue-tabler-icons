@@ -35,16 +35,16 @@ export default {
       }
     }), "   ", h("rect", {
       attrs: {
-        x: "7",
-        y: "4",
-        width: "10",
-        height: "16",
+        x: "6",
+        y: "3",
+        width: "12",
+        height: "18",
         rx: "4"
       }
     }), "   ", h("line", {
       attrs: {
         x1: "12",
-        y1: "8",
+        y1: "7",
         x2: "12",
         y2: "11"
       }

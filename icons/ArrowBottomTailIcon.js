@@ -33,12 +33,9 @@ export default {
         d: "M0 0h24v24H0z",
         fill: "none"
       }
-    }), "   ", h("line", {
+    }), "   ", h("path", {
       attrs: {
-        x1: "12",
-        y1: "6",
-        x2: "12",
-        y2: "21"
+        d: "M12 6v15"
       }
     }), "   ", h("path", {
       attrs: {

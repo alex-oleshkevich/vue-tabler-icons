@@ -35,7 +35,7 @@ export default {
       }
     }), "   ", h("circle", {
       attrs: {
-        cx: "9",
+        cx: "6",
         cy: "19",
         r: "2"
       }
@@ -47,7 +47,11 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M3 3h2l2 12a3 3 0 0 0 3 2h7a3 3 0 0 0 3 -2l1 -7h-15.2"
+        d: "M17 17h-11v-14h-2"
+      }
+    }), "   ", h("path", {
+      attrs: {
+        d: "M6 5l14 1l-1 7h-13"
       }
     }), " "]);
   }

@@ -1080,10 +1080,10 @@
   resolved "https://registry.yarnpkg.com/@poi/pnp-webpack-plugin/-/pnp-webpack-plugin-0.0.2.tgz#4633d4445637a2ed3b3da7f831ea7ee38587e6d7"
   integrity sha512-5yqBjV6yZzrJBYVG6ASAbhRhAQMjEu1nYDPJFbpPDcfNxEvsO+QwIxFq3ABQwH0iq59nI62v8VtxEc/z+jDFOg==
 
-"@tabler/icons@^1.35.0":
-  version "1.38.1"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.38.1.tgz#11e43f7c41bf2a91c5e7c28cea60841a6caabdb8"
-  integrity sha512-hWEsUwCKo2sdiDNUG74IHhDEUIz+f1Kq5kQ36BP8YiqVrNHTsblbL8vNj5n+KMqxzScF2mjqKJffRxqkvqnJNg==
+"@tabler/icons@^1.39.0":
+  version "1.39.1"
+  resolved "https://registry.npmjs.org/@tabler/icons/-/icons-1.39.1.tgz#f17d76d3976d6dfad507ee1d49c93ec6fd47fb13"
+  integrity sha512-zYP8aijzKNfwxSWyr9/d2S6qdNA7MtHOwHg2EwqyZk7FjhD2IGIhNaFh9h8TMkVtGSUnBcnfKyJ56Eum6gTJ7A==
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -1165,6 +1165,11 @@
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
+
+"@vue/babel-helper-vue-jsx-merge-props@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
+  integrity sha512-QOi5OW45e2R20VygMSNhyQHvpdUwQZqGPc748JLGCYEy+yp8fNFNdbNIGAgZmi9e+2JHPd6i6idRuqivyicIkA==
 
 "@vue/component-compiler-utils@^3.1.0":
   version "3.2.0"

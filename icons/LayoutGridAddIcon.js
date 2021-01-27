@@ -59,11 +59,7 @@ export default {
       }
     }), "   ", h("path", {
       attrs: {
-        d: "M14 17h6"
-      }
-    }), "   ", h("path", {
-      attrs: {
-        d: "M17 14v6"
+        d: "M14 17h6m-3 -3v6"
       }
     }), " "]);
   }
