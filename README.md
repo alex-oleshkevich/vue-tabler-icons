@@ -1,6 +1,6 @@
 # Tabler Icons as Vue components
 
-[Live preview tool](https://tablericons.com/)
+[Live preview tool](https://tabler-icons.io/)
 
 <details>
     <summary>Preview icons</summary>
@@ -140,5 +140,5 @@ Icon component will be in `icons` directory.
 
 ## Credits
 
-- [Tabler Icons](https://tablericons.com/) for icon pack
+- [Tabler Icons](https://tabler-icons.io/) for icon pack
 - Build script inspired by [vue-feather-icons](https://github.com/egoist/vue-feather-icons)
