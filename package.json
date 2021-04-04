@@ -7,7 +7,8 @@
         "url": "https://github.com/alex-oleshkevich/vue-tabler-icons"
     },
     "scripts": {
-        "make:jsx": "node build.js",
+        "clean": "rm -rf ./icons ./jsx",
+        "make:jsx": "npm run clean && node build.js",
         "make:components": "babel ./jsx -d icons",
         "build": "npm run make:jsx && npm run make:components",
         "release": "npm run build && npm publish"
