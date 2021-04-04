@@ -1,4 +1,4 @@
-import _mergeJSXProps from "babel-helper-vue-jsx-merge-props";
+import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
   name: 'SwitchVerticalIcon',
   props: {
@@ -8,53 +8,55 @@ export default {
     }
   },
   functional: true,
-  render: function render(h, ctx) {
-    var size = parseInt(ctx.props.size) + 'px';
-    var attrs = ctx.data.attrs || {};
+
+  render(h, ctx) {
+    const size = parseInt(ctx.props.size) + 'px';
+    const attrs = ctx.data.attrs || {};
     attrs.width = attrs.width || size;
     attrs.height = attrs.height || size;
     ctx.data.attrs = attrs;
     return h("svg", _mergeJSXProps([{
-      attrs: {
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
+      "attrs": {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24",
         "stroke-width": "2",
-        stroke: "currentColor",
-        fill: "none",
+        "stroke": "currentColor",
+        "fill": "none",
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
       "class": "icon icon-tabler icon-tabler-switch-vertical"
     }, ctx.data]), ["   ", h("path", {
-      attrs: {
-        stroke: "none",
-        d: "M0 0h24v24H0z",
-        fill: "none"
+      "attrs": {
+        "stroke": "none",
+        "d": "M0 0h24v24H0z",
+        "fill": "none"
       }
     }), "   ", h("polyline", {
-      attrs: {
-        points: "3 8 7 4 11 8"
+      "attrs": {
+        "points": "3 8 7 4 11 8"
       }
     }), "   ", h("line", {
-      attrs: {
-        x1: "7",
-        y1: "4",
-        x2: "7",
-        y2: "13"
+      "attrs": {
+        "x1": "7",
+        "y1": "4",
+        "x2": "7",
+        "y2": "13"
       }
     }), "   ", h("polyline", {
-      attrs: {
-        points: "13 16 17 20 21 16"
+      "attrs": {
+        "points": "13 16 17 20 21 16"
       }
     }), "   ", h("line", {
-      attrs: {
-        x1: "17",
-        y1: "10",
-        x2: "17",
-        y2: "20"
+      "attrs": {
+        "x1": "17",
+        "y1": "10",
+        "x2": "17",
+        "y2": "20"
       }
     }), " "]);
   }
+
 };
