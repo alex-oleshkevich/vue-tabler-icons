@@ -1,6 +1,6 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'PizzaIcon',
+  name: 'SunriseIcon',
   props: {
     size: {
       type: String,
@@ -27,7 +27,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-pizza"
+      "class": "icon icon-tabler icon-tabler-sunrise"
     }, ctx.data]), ["   ", h("path", {
       "attrs": {
         "stroke": "none",
@@ -36,19 +36,18 @@ export default {
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"
+        "d": "M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0"
+      }
+    }), "   ", h("line", {
+      "attrs": {
+        "x1": "3",
+        "y1": "21",
+        "x2": "21",
+        "y2": "21"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"
-      }
-    }), "   ", h("path", {
-      "attrs": {
-        "d": "M13 11.01v-.01"
-      }
-    }), "   ", h("path", {
-      "attrs": {
-        "d": "M11 14v-.01"
+        "d": "M12 9v-6l3 3m-6 0l3 -3"
       }
     }), " "]);
   }

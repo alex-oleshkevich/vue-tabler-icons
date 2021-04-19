@@ -271,9 +271,9 @@
     fastq "^1.6.0"
 
 "@tabler/icons@^1.39.0":
-  version "1.39.1"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.39.1.tgz#f17d76d3976d6dfad507ee1d49c93ec6fd47fb13"
-  integrity sha512-zYP8aijzKNfwxSWyr9/d2S6qdNA7MtHOwHg2EwqyZk7FjhD2IGIhNaFh9h8TMkVtGSUnBcnfKyJ56Eum6gTJ7A==
+  version "1.40.2"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.40.2.tgz#92bb287b8d09cf4e10012dbec320dc944c5d3375"
+  integrity sha512-JPMg7NpdJ45DdSTn1SPP43KSjXrtGqw62M7o+iY1uWZJrXK2hm2tv6fuVLlDeRqLAnwBcDROKvwpIpteJT9j+Q==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"

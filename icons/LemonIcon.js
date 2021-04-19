@@ -1,6 +1,6 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'PizzaIcon',
+  name: 'LemonIcon',
   props: {
     size: {
       type: String,
@@ -27,7 +27,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-pizza"
+      "class": "icon icon-tabler icon-tabler-lemon"
     }, ctx.data]), ["   ", h("path", {
       "attrs": {
         "stroke": "none",
@@ -36,19 +36,23 @@ export default {
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"
+        "d": "M17.536 3.393c3.905 3.906 3.905 10.237 0 14.143c-3.906 3.905 -10.237 3.905 -14.143 0l14.143 -14.143"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"
+        "d": "M5.868 15.06a6.5 6.5 0 0 0 9.193 -9.192"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M13 11.01v-.01"
+        "d": "M10.464 10.464l4.597 4.597"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M11 14v-.01"
+        "d": "M10.464 10.464v6.364"
+      }
+    }), "   ", h("path", {
+      "attrs": {
+        "d": "M10.464 10.464h6.364"
       }
     }), " "]);
   }

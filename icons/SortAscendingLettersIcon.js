@@ -1,6 +1,6 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'PizzaIcon',
+  name: 'SortAscendingLettersIcon',
   props: {
     size: {
       type: String,
@@ -27,7 +27,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-pizza"
+      "class": "icon icon-tabler icon-tabler-sort-ascending-letters"
     }, ctx.data]), ["   ", h("path", {
       "attrs": {
         "stroke": "none",
@@ -36,19 +36,19 @@ export default {
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"
+        "d": "M15 10v-5c0 -1.38 .62 -2 2 -2s2 .62 2 2v5m0 -3h-4"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"
+        "d": "M19 21h-4l4 -7h-4"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M13 11.01v-.01"
+        "d": "M4 15l3 3l3 -3"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M11 14v-.01"
+        "d": "M7 6v12"
       }
     }), " "]);
   }

@@ -1,6 +1,6 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'SunshineIcon',
+  name: 'SortDescendingLettersIcon',
   props: {
     size: {
       type: String,
@@ -27,7 +27,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-sunshine"
+      "class": "icon icon-tabler icon-tabler-sort-descending-letters"
     }, ctx.data]), ["   ", h("path", {
       "attrs": {
         "stroke": "none",
@@ -36,18 +36,19 @@ export default {
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0"
-      }
-    }), "   ", h("line", {
-      "attrs": {
-        "x1": "3",
-        "y1": "21",
-        "x2": "21",
-        "y2": "21"
+        "d": "M15 21v-5c0 -1.38 .62 -2 2 -2s2 .62 2 2v5m0 -3h-4"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M12 3v6l3 -3m-6 0l3 3"
+        "d": "M19 10h-4l4 -7h-4"
+      }
+    }), "   ", h("path", {
+      "attrs": {
+        "d": "M4 15l3 3l3 -3"
+      }
+    }), "   ", h("path", {
+      "attrs": {
+        "d": "M7 6v12"
       }
     }), " "]);
   }

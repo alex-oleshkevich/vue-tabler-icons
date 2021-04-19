@@ -1,6 +1,6 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'PizzaIcon',
+  name: 'CoffeeIcon',
   props: {
     size: {
       type: String,
@@ -27,7 +27,7 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-pizza"
+      "class": "icon icon-tabler icon-tabler-coffee"
     }, ctx.data]), ["   ", h("path", {
       "attrs": {
         "stroke": "none",
@@ -36,19 +36,23 @@ export default {
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"
+        "d": "M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"
+        "d": "M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M13 11.01v-.01"
+        "d": "M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M11 14v-.01"
+        "d": "M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z"
+      }
+    }), "   ", h("path", {
+      "attrs": {
+        "d": "M16.746 16.726a3 3 0 1 0 .252 -5.555"
       }
     }), " "]);
   }

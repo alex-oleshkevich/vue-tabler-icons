@@ -1,6 +1,6 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
 export default {
-  name: 'PizzaIcon',
+  name: 'VectorBezierIcon',
   props: {
     size: {
       type: String,
@@ -27,28 +27,70 @@ export default {
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
       },
-      "class": "icon icon-tabler icon-tabler-pizza"
+      "class": "icon icon-tabler icon-tabler-vector-bezier"
     }, ctx.data]), ["   ", h("path", {
       "attrs": {
         "stroke": "none",
         "d": "M0 0h24v24H0z",
         "fill": "none"
       }
-    }), "   ", h("path", {
+    }), "   ", h("rect", {
       "attrs": {
-        "d": "M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"
+        "x": "3",
+        "y": "14",
+        "width": "4",
+        "height": "4",
+        "rx": "1"
+      }
+    }), "   ", h("rect", {
+      "attrs": {
+        "x": "17",
+        "y": "14",
+        "width": "4",
+        "height": "4",
+        "rx": "1"
+      }
+    }), "   ", h("rect", {
+      "attrs": {
+        "x": "10",
+        "y": "6",
+        "width": "4",
+        "height": "4",
+        "rx": "1"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"
+        "d": "M10 8.5a6 6 0 0 0 -5 5.5"
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M13 11.01v-.01"
+        "d": "M14 8.5a6 6 0 0 1 5 5.5"
       }
-    }), "   ", h("path", {
+    }), "   ", h("line", {
       "attrs": {
-        "d": "M11 14v-.01"
+        "x1": "10",
+        "y1": "8",
+        "x2": "4",
+        "y2": "8"
+      }
+    }), "   ", h("line", {
+      "attrs": {
+        "x1": "20",
+        "y1": "8",
+        "x2": "14",
+        "y2": "8"
+      }
+    }), "   ", h("circle", {
+      "attrs": {
+        "cx": "3",
+        "cy": "8",
+        "r": "1"
+      }
+    }), "   ", h("circle", {
+      "attrs": {
+        "cx": "21",
+        "cy": "8",
+        "r": "1"
       }
     }), " "]);
   }

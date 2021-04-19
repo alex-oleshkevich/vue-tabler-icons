@@ -47,7 +47,7 @@ export default {
       }
     }), "   ", h("path", {
       "attrs": {
-        "d": "M12 9v-6l3 3m-6 0l3 -3"
+        "d": "M12 3v6l3 -3m-6 0l3 3"
       }
     }), " "]);
   }
