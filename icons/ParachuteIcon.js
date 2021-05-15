@@ -1,5 +1,4 @@
-import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
-import { h } from 'vue';
+import { mergeProps as _mergeProps, createTextVNode as _createTextVNode, createVNode as _createVNode } from "vue";
 export default {
   name: 'ParachuteIcon',
   props: {
@@ -11,48 +10,41 @@ export default {
   functional: true,
 
   render(ctx) {
-    const h = arguments[0];
-    const size = parseInt(ctx.props.size) + 'px';
-    const attrs = ctx.data.attrs || {};
-    attrs.width = attrs.width || size;
-    attrs.height = attrs.height || size;
-    ctx.data.attrs = attrs;
-    return h("svg", _mergeJSXProps([{
-      "attrs": {
-        "xmlns": "http://www.w3.org/2000/svg",
-        "width": "24",
-        "height": "24",
-        "viewBox": "0 0 24 24",
-        "stroke-width": "2",
-        "stroke": "currentColor",
-        "fill": "none",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-      },
-      "class": "icon icon-tabler icon-tabler-parachute"
-    }, ctx.data]), ["   ", h("path", {
-      "attrs": {
-        "stroke": "none",
-        "d": "M0 0h24v24H0z",
-        "fill": "none"
-      }
-    }), "   ", h("path", {
-      "attrs": {
-        "d": "M22 12a10 10 0 1 0 -20 0"
-      }
-    }), "   ", h("path", {
-      "attrs": {
-        "d": "M22 12c0 -1.66 -1.46 -3 -3.25 -3c-1.8 0 -3.25 1.34 -3.25 3c0 -1.66 -1.57 -3 -3.5 -3s-3.5 1.34 -3.5 3c0 -1.66 -1.46 -3 -3.25 -3c-1.8 0 -3.25 1.34 -3.25 3"
-      }
-    }), "   ", h("path", {
-      "attrs": {
-        "d": "M2 12l10 10l-3.5 -10"
-      }
-    }), "   ", h("path", {
-      "attrs": {
-        "d": "M15.5 12l-3.5 10l10 -10"
-      }
-    }), " "]);
+    const size = parseInt(ctx.$props.size) + 'px';
+    const attrs = ctx.$data.attrs || {};
+    const data = { ...ctx.$data,
+      width: attrs.width || size,
+      height: attrs.height || size
+    }; // const size = parseInt(ctx.props.size) + 'px';
+    // const attrs = ctx.data.attrs || {};
+    // attrs.width = attrs.width || size;
+    // attrs.height = attrs.height || size;
+    // ctx.data.attrs = attrs;
+
+    return _createVNode("svg", _mergeProps({
+      "xmlns": "http://www.w3.org/2000/svg",
+      "class": "icon icon-tabler icon-tabler-parachute",
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24",
+      "stroke-width": "2",
+      "stroke": "currentColor",
+      "fill": "none",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }, ctx.data), [_createTextVNode("   "), _createVNode("path", {
+      "stroke": "none",
+      "d": "M0 0h24v24H0z",
+      "fill": "none"
+    }, null), _createTextVNode("   "), _createVNode("path", {
+      "d": "M22 12a10 10 0 1 0 -20 0"
+    }, null), _createTextVNode("   "), _createVNode("path", {
+      "d": "M22 12c0 -1.66 -1.46 -3 -3.25 -3c-1.8 0 -3.25 1.34 -3.25 3c0 -1.66 -1.57 -3 -3.5 -3s-3.5 1.34 -3.5 3c0 -1.66 -1.46 -3 -3.25 -3c-1.8 0 -3.25 1.34 -3.25 3"
+    }, null), _createTextVNode("   "), _createVNode("path", {
+      "d": "M2 12l10 10l-3.5 -10"
+    }, null), _createTextVNode("   "), _createVNode("path", {
+      "d": "M15.5 12l-3.5 10l10 -10"
+    }, null), _createTextVNode(" ")]);
   }
 
 };

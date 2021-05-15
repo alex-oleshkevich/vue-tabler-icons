@@ -9,8 +9,7 @@ const PATH = path.resolve('node_modules/@tabler/icons/icons');
 const jsxOutDir = './jsx';
 
 const componentTemplate = (name, svg) =>
-  `import { h } from 'vue'
-
+  `
 export default {
     name: '${name}',
     props: {
@@ -21,11 +20,13 @@ export default {
     },
     functional: true,
     render(ctx) {
-        const size = parseInt(ctx.props.size) + 'px';
-        const attrs = ctx.data.attrs || {};
-        attrs.width = attrs.width || size;
-        attrs.height = attrs.height || size;
-        ctx.data.attrs = attrs;
+        const size = parseInt(ctx.$props.size) + 'px';
+        const attrs = ctx.$data.attrs || {};
+        const data = {
+          ...ctx.$data,
+          width: attrs.width || size,
+          height: attrs.height || size,
+        };
       
         return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...ctx.data}>')}
     }

@@ -28,15 +28,15 @@
         "@jsdevtools/version-bump-prompt": "^6.1.0",
         "@tabler/icons": "^1.39.0",
         "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
-        "@vue/babel-preset-jsx": "^1.2.4",
+        "@vue/babel-plugin-jsx": "^1.0.6",
         "fs-extra": "^9.0.1",
         "pascal-case": "^3.1.1",
         "vue": "2.6.12",
         "vue-template-compiler": "2.6.12"
     },
     "babel": {
-        "presets": [
-            "@vue/babel-preset-jsx"
+        "plugins": [
+            "@vue/babel-plugin-jsx"
         ]
     }
 }
