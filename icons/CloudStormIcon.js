@@ -1,4 +1,5 @@
 import _mergeJSXProps from "@vue/babel-helper-vue-jsx-merge-props";
+import { h } from 'vue';
 export default {
   name: 'CloudStormIcon',
   props: {
@@ -9,7 +10,8 @@ export default {
   },
   functional: true,
 
-  render(h, ctx) {
+  render(ctx) {
+    const h = arguments[0];
     const size = parseInt(ctx.props.size) + 'px';
     const attrs = ctx.data.attrs || {};
     attrs.width = attrs.width || size;

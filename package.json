@@ -1,6 +1,6 @@
 {
-    "name": "vue-tabler-icons",
-    "version": "1.10.1",
+    "name": "vue-tabler-icons-vue3",
+    "version": "2.10.1",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -38,6 +38,5 @@
         "presets": [
             "@vue/babel-preset-jsx"
         ]
-    },
-    "dependencies": {}
+    }
 }
