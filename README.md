@@ -1,4 +1,4 @@
-# Tabler Icons as Vue components
+# Tabler Icons as Vue 3 components
 
 [Live preview tool](https://tabler-icons.io/)
 
@@ -15,11 +15,11 @@
 ## Installation
 
 ```bash
-yarn add vue-tabler-icons
+yarn add vue-tabler-icons-vue3
 
 # or
 
-npm i vue-tabler-icons
+npm i vue-tabler-icons-vue3
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ npm i vue-tabler-icons
 ```html
 <script>
     // MyComponent.vue
-    import { BoldIcon } from 'vue-tabler-icons';
+    import { BoldIcon } from 'vue-tabler-icons-vue3';
 
     export default {
         components: { BoldIcon },
@@ -45,7 +45,7 @@ You may install a Vue plugin that automatically adds all components to the Vue i
 
 ```js
 import Vue from 'vue';
-import VueTablerIcons from 'vue-tabler-icons';
+import VueTablerIcons from 'vue-tabler-icons-vue3';
 
 Vue.use(VueTablerIcons);
 ```
@@ -123,7 +123,7 @@ For example, if you want to set `stroke-width` attribute just set it as usually:
 
 Clone repo:
 ```bash
-git clone https://github.com/alex-oleshkevich/vue-feather-icons.git
+git clone https://github.com/alex-oleshkevich/vue-tabler-icons.git
 ```
 
 Install deps:
