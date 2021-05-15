@@ -22,13 +22,13 @@ export default {
     render(ctx) {
         const size = parseInt(ctx.$props.size) + 'px';
         const attrs = ctx.$data.attrs || {};
-        const data = {
+        const ctxData = {
           ...ctx.$data,
           width: attrs.width || size,
           height: attrs.height || size,
         };
       
-        return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...ctx.data}>')}
+        return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...ctxData}>')}
     }
 }
 `.trim();
