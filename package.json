@@ -1,6 +1,6 @@
 {
     "name": "vue-tabler-icons",
-    "version": "1.11.1",
+    "version": "1.11.2",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -20,7 +20,7 @@
     "main": "./index.js",
     "sideEffects": false,
     "dependencies": {
-        "@vue/babel-helper-vue-jsx-merge-props"
+        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.10.5",
