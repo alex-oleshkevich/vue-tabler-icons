@@ -19,7 +19,9 @@
     },
     "main": "./index.js",
     "sideEffects": false,
-    "dependencies": {},
+    "dependencies": {
+        "@vue/babel-helper-vue-jsx-merge-props"
+    },
     "devDependencies": {
         "@babel/cli": "^7.10.5",
         "@babel/core": "^7.11.4",
