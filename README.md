@@ -1,4 +1,13 @@
-# Tabler Icons as Vue components
+# Tabler Icons as Vue 3 components
+
+![NPM](https://img.shields.io/npm/v/vue-tabler-icons)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alex-oleshkevich/vue-tabler-icons/Test)
+![GitHub](https://img.shields.io/github/license/alex-oleshkevich/vue-tabler-icons)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/vue-tabler-icons)
+![NPM - Downloads](https://img.shields.io/npm/dm/vue-tabler-icons)
+
+
+## Preview
 
 [Live preview tool](https://tabler-icons.io/)
 
@@ -9,10 +18,20 @@
 ![Tabler Icons](https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/icons.png)
 
     </p>
+
 </details>
 
+## Features
+
+-   Over 1250 pixel-perfect icons
+-   TypeScript definitions
+-   Vue 3 support
+-   Vue 2 support (see v1.x)
+-   All icons are compiled to JS, no preprocessing required
 
 ## Installation
+
+### Installation for Vue 3
 
 ```bash
 yarn add vue-tabler-icons
@@ -22,12 +41,22 @@ yarn add vue-tabler-icons
 npm i vue-tabler-icons
 ```
 
+### Installation for Vue 2
+
+Version 2.x is Vue 3 only, if you use Vue 2 then install any 1.x version
+
+```bash
+yarn add vue-tabler-icons@^1.0
+```
+
+v1.x is no longer a priority so updates may be delayed or discontinued.
+
 ## Usage
 
 ```html
 <script>
     // MyComponent.vue
-    import { BoldIcon } from 'vue-tabler-icons';
+    import { BoldIcon } from "vue-tabler-icons";
 
     export default {
         components: { BoldIcon },
@@ -43,9 +72,11 @@ npm i vue-tabler-icons
 
 You may install a Vue plugin that automatically adds all components to the Vue instance.
 
+_Note: this usage is not recommended as it cannot be tree-shaken._
+
 ```js
-import Vue from 'vue';
-import VueTablerIcons from 'vue-tabler-icons';
+import Vue from "vue";
+import VueTablerIcons from "vue-tabler-icons";
 
 Vue.use(VueTablerIcons);
 ```
@@ -78,11 +109,10 @@ For example:
 
 Following icon names are replaced to match JavaScript variable name pattern:
 
-| Original | New           |
-|----------|---------------|
-| 2fa.svg  | TwoFactorAuth |
-| 3d-cube-sphere.svg  | ThreedCubeSphereIcon |
-
+| Original           | New                  |
+| ------------------ | -------------------- |
+| 2fa.svg            | TwoFactorAuth        |
+| 3d-cube-sphere.svg | ThreedCubeSphereIcon |
 
 ## Icon size
 
@@ -100,14 +130,12 @@ All other attributes are directly bound to the underlying SVG image.
 
 Attributes `height` and `width` have higher precedence over `size` property.
 
-
 ## Icon color
 
 All icons use `currentColor` as their color. You can colorize your icons as you do that for text.
 
 ```html
-<bold-icon style="color: red" />
-<bold-icon class="text-red" />
+<bold-icon style="color: red" /> <bold-icon class="text-red" />
 ```
 
 ## Stroke width and other SVG attributes
@@ -122,16 +150,19 @@ For example, if you want to set `stroke-width` attribute just set it as usually:
 ## Building locally
 
 Clone repo:
+
 ```bash
 git clone https://github.com/alex-oleshkevich/vue-feather-icons.git
 ```
 
 Install deps:
+
 ```bash
 yarn install
 ```
 
 Run build
+
 ```bash
 yarn build
 ```
@@ -140,5 +171,5 @@ Icon component will be in `icons` directory.
 
 ## Credits
 
-- [Tabler Icons](https://tabler-icons.io/) for icon pack
-- Build script inspired by [vue-feather-icons](https://github.com/egoist/vue-feather-icons)
+-   [Tabler Icons](https://tabler-icons.io/) for icon pack
+-   Build script inspired by [vue-feather-icons](https://github.com/egoist/vue-feather-icons)

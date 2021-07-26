@@ -18,15 +18,16 @@ export default {
             default: '24',
         }
     },
-    functional: true,
-    render(h, ctx) {
-        const size = parseInt(ctx.props.size) + 'px';
-        const attrs = ctx.data.attrs || {};
-        attrs.width = attrs.width || size;
-        attrs.height = attrs.height || size;
-        ctx.data.attrs = attrs;
-      
-        return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...ctx.data}>')}
+    render() {
+        const size = this.$props.size + 'px';
+        const attrs = this.$data.attrs || {};
+        const allAttrs = {
+            ...this.$data,
+            width: attrs.width || size,
+            height: attrs.height || size,
+        }
+
+        return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...allAttrs}>')}
     }
 }
 `.trim();

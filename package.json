@@ -1,6 +1,6 @@
 {
     "name": "vue-tabler-icons",
-    "version": "1.11.3",
+    "version": "2.0.0",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -18,25 +18,20 @@
         "name": "Alex Oleshkevich"
     },
     "main": "./index.js",
+    "types": "./index.d.ts",
     "sideEffects": false,
-    "dependencies": {
-        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
-    },
     "devDependencies": {
-        "@babel/cli": "^7.10.5",
-        "@babel/core": "^7.11.4",
-        "@jsdevtools/version-bump-prompt": "^6.1.0",
-        "@tabler/icons": "^1.39.0",
-        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
-        "@vue/babel-preset-jsx": "^1.2.4",
-        "fs-extra": "^9.0.1",
-        "pascal-case": "^3.1.1",
-        "vue": "2.6.12",
-        "vue-template-compiler": "2.6.12"
+        "@babel/cli": "^7.14.8",
+        "@babel/core": "^7.14.8",
+        "@tabler/icons": "^1.41.2",
+        "@vue/babel-plugin-jsx": "^1.0.6",
+        "fs-extra": "^10.0.0",
+        "pascal-case": "^3.1.2",
+        "vue": "^3.1"
     },
     "babel": {
-        "presets": [
-            "@vue/babel-preset-jsx"
+        "plugins": [
+            "@vue/babel-plugin-jsx"
         ]
     }
 }
