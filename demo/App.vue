@@ -6,6 +6,7 @@ export default {
         return {
             color: "black",
             strokeWidth: "2",
+            size: 32,
         };
     },
     computed: {
@@ -34,6 +35,10 @@ export default {
                     Stroke Width
                     <input type="range" v-model="strokeWidth" step="1" min="1" max="10" />
                 </label>
+                <label class="flex items-center mr-5">
+                    Size
+                    <input type="range" v-model="size" step="1" min="4" max="64" />
+                </label>
             </div>
             <div class="grid grid-cols-6 gap-5">
                 <div
@@ -43,7 +48,7 @@ export default {
                     v-for="(component, name) in icons"
                 >
                     <div class="flex items-center justify-center">
-                        <component size="32" :stroke-width="strokeWidth" :is="component" :style="{ color }" />
+                        <component :size="size" :stroke-width="strokeWidth" :is="component" :style="{ color }" />
                     </div>
                     <div class="text-sm text-center mt-3">
                         {{ tagName(name) }}

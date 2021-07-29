@@ -143,7 +143,13 @@ Run build
 yarn build
 ```
 
-Icon component will be in `icons` directory.
+Make bundle
+
+```
+yarn dist
+```
+
+Icon component will be in `icons/` directory, and all assembled files in `dist/`.
 
 ## Credits
 
