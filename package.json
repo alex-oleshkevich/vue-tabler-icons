@@ -1,38 +1,44 @@
 {
     "name": "vue-tabler-icons",
-    "version": "1.11.3",
+    "version": "1.11.4-alpha.1",
     "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/alex-oleshkevich/vue-tabler-icons"
     },
     "scripts": {
-        "clean": "rm -rf ./icons ./jsx",
-        "make:jsx": "npm run clean && node build.js",
-        "make:components": "babel ./jsx -d icons",
-        "build": "npm run make:jsx && npm run make:components",
-        "release": "npm run build && npm publish"
+        "clean": "rm -rf ./icons ./jsx ./dist",
+        "jsx": "node build.js",
+        "compile": "babel ./jsx -d icons",
+        "build": "npm run clean && npm run jsx && npm run compile",
+        "dist": "bili --format umd,umd-min,es,cjs --module-name VueTablerIcons --input.vue-tabler-icons index.js && cp index.d.ts dist/",
+        "release": "npm run build && npm publish",
+        "demo": "vue serve demo/App.vue"
     },
     "author": {
         "email": "alex.oleshkevich@gmail.com",
         "name": "Alex Oleshkevich"
     },
-    "main": "./index.js",
+    "main": "dist/vue-tabler-icons.js",
+    "module": "dist/vue-tabler-icons.es.js",
+    "cdn": "dist/vue-tabler-icons.umd.js",
+    "unpkg": "dist/vue-tabler-icons.umd.js",
+    "jsdelivr": "dist/vue-tabler-icons.umd.js",
+    "files": [
+        "dist",
+        "icons"
+    ],
     "sideEffects": false,
-    "dependencies": {
-        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
-    },
     "devDependencies": {
         "@babel/cli": "^7.10.5",
         "@babel/core": "^7.11.4",
-        "@jsdevtools/version-bump-prompt": "^6.1.0",
         "@tabler/icons": "^1.39.0",
-        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
         "@vue/babel-preset-jsx": "^1.2.4",
+        "bili": "^5.0.5",
         "fs-extra": "^9.0.1",
         "pascal-case": "^3.1.1",
-        "vue": "2.6.12",
-        "vue-template-compiler": "2.6.12"
+        "vue": "2.6.14",
+        "vue-template-compiler": "2.6.14"
     },
     "babel": {
         "presets": [

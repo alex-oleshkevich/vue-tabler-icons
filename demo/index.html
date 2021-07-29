@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="../dist/vue-tabler-icons.umd.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <two-factor-auth-icon></two-factor-auth-icon>
+            <a-b-icon></a-b-icon>
+        </div>
+        <script>
+            Vue.use(VueTablerIcons.Plugin);
+            new Vue({
+                el: '#app',
+            });
+        </script>
+    </body>
+</html>

@@ -1,10 +1,10 @@
-export * from './icons';
-import * as components from './icons';
+export * from "./icons";
+import * as components from "./icons";
 
-export default {
+export const Plugin = {
     install(Vue) {
-        Object
-          .entries(components)
-          .forEach(([name, component]) => Vue.component(name, component));
-    }
-}
+        Object.entries(components).forEach(([name, component]) => Vue.component(name, component));
+    },
+};
+
+export default Plugin;

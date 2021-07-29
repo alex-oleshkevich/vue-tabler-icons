@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-const fs = require('fs-extra');
-const path = require('path');
-const { pascalCase } = require('pascal-case');
+const fs = require("fs-extra");
+const path = require("path");
+const { pascalCase } = require("pascal-case");
 
-const PATH = path.resolve('node_modules/@tabler/icons/icons');
+const PATH = path.resolve("node_modules/@tabler/icons/icons");
 
-const jsxOutDir = './jsx';
+const jsxOutDir = "./jsx";
 
 const componentTemplate = (name, svg) =>
     `
@@ -25,24 +25,12 @@ export default {
         attrs.width = attrs.width || size;
         attrs.height = attrs.height || size;
         ctx.data.attrs = attrs;
-      
-        return ${svg.replace(/<svg([^>]+)>/, '<svg$1 {...ctx.data}>')}
+
+        return ${svg.replace(/<svg([^>]+)>/, "<svg$1 {...ctx.data}>")}
     }
 }
 `.trim();
 
-const pluginTemplate = `
-export * from './icons';
-import * as components from './icons';
-
-export default {
-    install(Vue) {
-        Object
-          .entries(components)
-          .forEach(([name, component]) => Vue.component(name, component));
-    }
-}
-`.trim();
 
 const typingTemplate = `
 import { DefineComponent } from 'vue';
@@ -55,32 +43,30 @@ export type TablerIconComponent = DefineComponent<TablerIconProps, {}, any>;
 `.trim();
 
 const aliases = {
-    '2fa.svg': 'two-factor-auth.svg',
-    '3d-cube-sphere.svg': 'threed-cube-sphere.svg',
-}
+    "2fa.svg": "two-factor-auth.svg",
+    "3d-cube-sphere.svg": "threed-cube-sphere.svg",
+};
 
 fs.readdir(PATH, (err, items) => {
     let index = [];
     let typings = [];
     items
-        .filter(name => name.endsWith('.svg'))
-        .forEach(name => {
-            let content = fs.readFileSync(`${PATH}/${name}`, 'utf-8').replace(/\n/gm, ' ');
+        .filter((name) => name.endsWith(".svg"))
+        .forEach((name) => {
+            let content = fs.readFileSync(`${PATH}/${name}`, "utf-8").replace(/\n/gm, " ");
             if (name in aliases) {
                 name = aliases[name];
             }
-            let nameCamel = pascalCase(name.replace('.svg', '')).replace(/_(\d)/g, '$1') + 'Icon';
-            let component = componentTemplate(nameCamel, content);
+            let nameCamel = pascalCase(name.replace(".svg", "")).replace(/_(\d)/g, "$1") + "Icon";
+            let component = componentTemplate(nameCamel, content) + '\n';
             let filePath = path.resolve(`${jsxOutDir}/${nameCamel}.js`);
-            index.push(`export { default as ${nameCamel} } from './icons/${nameCamel}.js';`);
+            index.push(`export { default as ${nameCamel} } from './${nameCamel}.js';`);
             typings.push(`export const ${nameCamel}: TablerIconComponent;`);
-            fs.ensureDir(path.dirname(filePath)).then(() => {
-                fs.writeFileSync(filePath, component, 'utf-8');
-            });
+            fs.ensureDirSync(path.dirname(filePath));
+            fs.writeFileSync(filePath, component, "utf-8");
         });
-    index.push('');
-    typings.push('');
-    fs.writeFileSync('./icons.js', index.join('\n'), 'utf-8');
-    fs.writeFileSync('./index.js', [pluginTemplate, ''].join('\n'), 'utf-8');
-    fs.writeFileSync('./index.d.ts', typingTemplate + '\n\n' + typings.join('\n'), 'utf-8');
+    index.push("");
+    typings.push("");
+    fs.writeFileSync("./jsx/index.js", index.join("\n"), "utf-8");
+    fs.writeFileSync("./index.d.ts", typingTemplate + "\n\n" + typings.join("\n"), "utf-8");
 });
