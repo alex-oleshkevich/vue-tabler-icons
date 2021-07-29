@@ -9,8 +9,8 @@
 ![Tabler Icons](https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/icons.png)
 
     </p>
-</details>
 
+</details>
 
 ## Installation
 
@@ -27,7 +27,7 @@ npm i vue-tabler-icons
 ```html
 <script>
     // MyComponent.vue
-    import { BoldIcon } from 'vue-tabler-icons';
+    import { BoldIcon } from "vue-tabler-icons";
 
     export default {
         components: { BoldIcon },
@@ -44,8 +44,8 @@ npm i vue-tabler-icons
 You may install a Vue plugin that automatically adds all components to the Vue instance.
 
 ```js
-import Vue from 'vue';
-import VueTablerIcons from 'vue-tabler-icons';
+import Vue from "vue";
+import VueTablerIcons from "vue-tabler-icons";
 
 Vue.use(VueTablerIcons);
 ```
@@ -60,7 +60,7 @@ Now you can use icons without importing them:
 
 ### Using CDN
 
-Installation via CDN is not supported yet.
+If you prefer CDN, then use this URL `https://unpkg.com/vue-tabler-icons@1.11.4/dist/vue-tabler-icons.umd.js`
 
 ## Naming pattern
 
@@ -78,11 +78,10 @@ For example:
 
 Following icon names are replaced to match JavaScript variable name pattern:
 
-| Original | New           |
-|----------|---------------|
-| 2fa.svg  | TwoFactorAuth |
-| 3d-cube-sphere.svg  | ThreedCubeSphereIcon |
-
+| Original           | New                  |
+| ------------------ | -------------------- |
+| 2fa.svg            | TwoFactorAuth        |
+| 3d-cube-sphere.svg | ThreedCubeSphereIcon |
 
 ## Icon size
 
@@ -100,14 +99,12 @@ All other attributes are directly bound to the underlying SVG image.
 
 Attributes `height` and `width` have higher precedence over `size` property.
 
-
 ## Icon color
 
 All icons use `currentColor` as their color. You can colorize your icons as you do that for text.
 
 ```html
-<bold-icon style="color: red" />
-<bold-icon class="text-red" />
+<bold-icon style="color: red" /> <bold-icon class="text-red" />
 ```
 
 ## Stroke width and other SVG attributes
@@ -122,16 +119,19 @@ For example, if you want to set `stroke-width` attribute just set it as usually:
 ## Building locally
 
 Clone repo:
+
 ```bash
 git clone https://github.com/alex-oleshkevich/vue-feather-icons.git
 ```
 
 Install deps:
+
 ```bash
 yarn install
 ```
 
 Run build
+
 ```bash
 yarn build
 ```
@@ -140,5 +140,4 @@ Icon component will be in `icons` directory.
 
 ## Credits
 
-- [Tabler Icons](https://tabler-icons.io/) for icon pack
-- Build script inspired by [vue-feather-icons](https://github.com/egoist/vue-feather-icons)
+-   [Tabler Icons](https://tabler-icons.io/) for icon pack

@@ -37,6 +37,8 @@ export type Plugin = {
     install(vue: Vue): void;
 };
 
+export default Plugin;
+
 export type TablerIconComponent = VueConstructor;
 `.trim();
 
