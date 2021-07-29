@@ -1,30 +1,39 @@
 {
     "name": "vue-tabler-icons",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/alex-oleshkevich/vue-tabler-icons"
     },
     "scripts": {
-        "clean": "rm -rf ./icons ./jsx",
-        "make:jsx": "npm run clean && node build.js",
-        "make:components": "babel ./jsx -d icons",
-        "build": "npm run make:jsx && npm run make:components",
-        "release": "npm run build && npm publish"
+        "clean": "rm -rf ./icons ./dist",
+        "compile": "node build.js",
+        "build": "npm run clean && npm run compile",
+        "dist": "bili --format umd,umd-min,es,cjs --module-name VueTablerIcons --input.vue-tabler-icons index.js && cp index.d.ts dist/",
+        "release": "npm run build && npm run dist && npm publish"
     },
     "author": {
         "email": "alex.oleshkevich@gmail.com",
         "name": "Alex Oleshkevich"
     },
-    "main": "./index.js",
-    "types": "./index.d.ts",
+    "main": "dist/vue-tabler-icons.js",
+    "module": "dist/vue-tabler-icons.es.js",
+    "cdn": "dist/vue-tabler-icons.umd.min.js",
+    "unpkg": "dist/vue-tabler-icons.umd.min.js",
+    "jsdelivr": "dist/vue-tabler-icons.umd.min.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "icons"
+    ],
     "sideEffects": false,
     "devDependencies": {
         "@babel/cli": "^7.14.8",
         "@babel/core": "^7.14.8",
         "@tabler/icons": "^1.41.2",
         "@vue/babel-plugin-jsx": "^1.0.6",
+        "bili": "^5.0.5",
         "fs-extra": "^10.0.0",
         "pascal-case": "^3.1.2",
         "vue": "^3.1"

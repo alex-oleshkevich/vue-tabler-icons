@@ -1,4 +1,12 @@
-import { DefineComponent } from 'vue';
+import { App, DefineComponent } from '@vue/runtime-core';
+
+export declare const Plugin: {
+    install(app: App, ...options: any[]): any;
+};
+
+export declare function install(app: App, ...options: any[]): any;
+
+export default Plugin;
 
 export type TablerIconProps = {
     size: string;

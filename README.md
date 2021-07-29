@@ -91,7 +91,13 @@ Now you can use icons without importing them:
 
 ### Using CDN
 
-Installation via CDN is not supported yet.
+If you prefer CDN, then use this URL `https://unpkg.com/vue-tabler-icons/dist/vue-tabler-icons.umd.js`  
+The library doesn't automatically registers itself so you need to do it manually:
+
+```html
+<script>
+    Vue.use(VueTablerIcons);
+</script>
 
 ## Naming pattern
 
@@ -172,4 +178,4 @@ Icon component will be in `icons` directory.
 ## Credits
 
 -   [Tabler Icons](https://tabler-icons.io/) for icon pack
--   Build script inspired by [vue-feather-icons](https://github.com/egoist/vue-feather-icons)
+   
