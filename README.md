@@ -3,7 +3,6 @@
 ![NPM](https://img.shields.io/npm/v/vue-tabler-icons)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alex-oleshkevich/vue-tabler-icons/Test)
 ![GitHub](https://img.shields.io/github/license/alex-oleshkevich/vue-tabler-icons)
-![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/vue-tabler-icons)
 ![NPM - Downloads](https://img.shields.io/npm/dm/vue-tabler-icons)
 
 
