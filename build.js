@@ -31,11 +31,13 @@ export default {
 `.trim();
 
 const typingTemplate = `
-import Vue, { VueConstructor } from 'vue';
+import _Vue, { VueConstructor } from 'vue';
 
-export type Plugin = {
-    install(vue: Vue): void;
+export declare const Plugin: {
+    install<T>(Vue: typeof _Vue, options?: T): void;
 };
+
+export declare function install<T>(Vue: typeof _Vue, options?: T): void;
 
 export default Plugin;
 

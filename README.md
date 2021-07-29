@@ -60,7 +60,14 @@ Now you can use icons without importing them:
 
 ### Using CDN
 
-If you prefer CDN, then use this URL `https://unpkg.com/vue-tabler-icons@1.11.4/dist/vue-tabler-icons.umd.js`
+If you prefer CDN, then use this URL `https://unpkg.com/vue-tabler-icons@1.11.4/dist/vue-tabler-icons.umd.js`  
+The library doesn't automatically registers itself so you need to do it manually:
+
+```html
+<script>
+    Vue.use(VueTablerIcons);
+</script>
+```
 
 ## Naming pattern
 
