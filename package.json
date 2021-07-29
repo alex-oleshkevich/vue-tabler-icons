@@ -7,12 +7,11 @@
         "url": "https://github.com/alex-oleshkevich/vue-tabler-icons"
     },
     "scripts": {
-        "clean": "rm -rf ./icons ./jsx ./dist",
-        "jsx": "node build.js",
-        "compile": "babel ./jsx -d icons",
-        "build": "npm run clean && npm run jsx && npm run compile",
+        "clean": "rm -rf ./icons ./dist",
+        "compile": "node build.js",
+        "build": "npm run clean && npm run compile",
         "dist": "bili --format umd,umd-min,es,cjs --module-name VueTablerIcons --input.vue-tabler-icons index.js && cp index.d.ts dist/",
-        "release": "npm run build && npm publish",
+        "release": "npm run build && npm run dist && npm publish",
         "demo": "vue serve demo/App.vue"
     },
     "author": {
@@ -24,6 +23,7 @@
     "cdn": "dist/vue-tabler-icons.umd.js",
     "unpkg": "dist/vue-tabler-icons.umd.js",
     "jsdelivr": "dist/vue-tabler-icons.umd.js",
+    "types": "dist/index.d.ts",
     "files": [
         "dist",
         "icons"

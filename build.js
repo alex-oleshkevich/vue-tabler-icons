@@ -3,10 +3,9 @@
 const fs = require("fs-extra");
 const path = require("path");
 const { pascalCase } = require("pascal-case");
+const babel = require('@babel/core');
 
 const PATH = path.resolve("node_modules/@tabler/icons/icons");
-
-const jsxOutDir = "./jsx";
 
 const componentTemplate = (name, svg) =>
     `
@@ -31,15 +30,14 @@ export default {
 }
 `.trim();
 
-
 const typingTemplate = `
-import { DefineComponent } from 'vue';
+import Vue, { VueConstructor } from 'vue';
 
-export type TablerIconProps = {
-    size: string;
-}
+export type Plugin = {
+    install(vue: Vue): void;
+};
 
-export type TablerIconComponent = DefineComponent<TablerIconProps, {}, any>;
+export type TablerIconComponent = VueConstructor;
 `.trim();
 
 const aliases = {
@@ -52,21 +50,30 @@ fs.readdir(PATH, (err, items) => {
     let typings = [];
     items
         .filter((name) => name.endsWith(".svg"))
-        .forEach((name) => {
+        .slice(0, parseInt(process.env.BUILD_LIMIT || "999999999"))
+        .forEach((name, pos) => {
+            process.stdout.write(`Building ${pos}/${items.length}: ` + name.padEnd(42) + '\r');
+
             let content = fs.readFileSync(`${PATH}/${name}`, "utf-8").replace(/\n/gm, " ");
-            if (name in aliases) {
-                name = aliases[name];
-            }
+
+            // make name
+            if (name in aliases) name = aliases[name];
             let nameCamel = pascalCase(name.replace(".svg", "")).replace(/_(\d)/g, "$1") + "Icon";
-            let component = componentTemplate(nameCamel, content) + '\n';
-            let filePath = path.resolve(`${jsxOutDir}/${nameCamel}.js`);
+
+            // create and transform component
+            let component = componentTemplate(nameCamel, content) + "\n";
+            const compiled = babel.transform(component, {presets: ['@vue/babel-preset-jsx']}).code;
+
+            // write icon component
+            let filePath = path.resolve(`icons/${nameCamel}.js`);
+            fs.ensureDirSync(path.dirname(filePath));
+            fs.writeFileSync(filePath, compiled, "utf-8");
+
             index.push(`export { default as ${nameCamel} } from './${nameCamel}.js';`);
             typings.push(`export const ${nameCamel}: TablerIconComponent;`);
-            fs.ensureDirSync(path.dirname(filePath));
-            fs.writeFileSync(filePath, component, "utf-8");
         });
     index.push("");
     typings.push("");
-    fs.writeFileSync("./jsx/index.js", index.join("\n"), "utf-8");
+    fs.writeFileSync("./icons/index.js", index.join("\n"), "utf-8");
     fs.writeFileSync("./index.d.ts", typingTemplate + "\n\n" + typings.join("\n"), "utf-8");
 });
