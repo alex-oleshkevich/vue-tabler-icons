@@ -97,6 +97,7 @@ The library doesn't automatically registers itself so you need to do it manually
 <script>
     Vue.use(VueTablerIcons);
 </script>
+```
 
 ## Naming pattern
 
