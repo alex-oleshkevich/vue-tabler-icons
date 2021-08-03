@@ -69,6 +69,7 @@ The library doesn't automatically registers itself so you need to do it manually
 </script>
 ```
 
+
 ## Naming pattern
 
 Component names use the same names as defined in the original library with some rules applied:
