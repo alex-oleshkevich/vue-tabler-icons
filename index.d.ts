@@ -16,7 +16,7 @@ export type TablerIconComponent = DefineComponent<TablerIconProps, {}, any>;
 
 export const TwoFactorAuthIcon: TablerIconComponent;
 export const ThreedCubeSphereIcon: TablerIconComponent;
-export const 3dRotateIcon: TablerIconComponent;
+export const ThreedRotateIcon: TablerIconComponent;
 export const ABIcon: TablerIconComponent;
 export const AccessPointOffIcon: TablerIconComponent;
 export const AccessPointIcon: TablerIconComponent;
