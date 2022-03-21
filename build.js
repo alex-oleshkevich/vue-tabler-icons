@@ -78,7 +78,7 @@ fs.readdir(PATH, (err, items) => {
             fs.ensureDirSync(path.dirname(filePath));
             fs.writeFileSync(filePath, compiled, "utf-8");
 
-            index.push(`export { default as ${nameCamel} } from './icons/${nameCamel}.js';`);
+            index.push(`export { default as ${nameCamel} } from './${nameCamel}.js';`);
             typings.push(`export const ${nameCamel}: TablerIconComponent;`);
         });
 

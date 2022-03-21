@@ -1,11 +1,8 @@
-<script>
-import Vue from 'vue';
-import Plugin from '../';
-import * as icons from '../icons.js';
+<script lang="ts">
+import * as icons from 'vue-tabler-icons';
+import { defineComponent } from 'vue'
 
-Vue.use(Plugin);
-
-export default {
+export default defineComponent({
     data() {
         return {
             color: 'black',
@@ -18,17 +15,17 @@ export default {
         },
     },
     methods: {
-        tagName(name) {
+        tagName(name:any) {
             return name
-                .replace(/[A-Z]/g, (m) => '-' + m.toLowerCase())
+                .replace(/[A-Z]/g, (m:any) => '-' + m.toLowerCase())
                 .substring(1);
         },
     },
-};
+});
 </script>
 
 <template>
-    <div>
+<div>
         <link
             href="//unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
             rel="stylesheet"
