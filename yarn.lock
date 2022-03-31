@@ -1033,9 +1033,9 @@
     picomatch "^2.2.2"
 
 "@tabler/icons@^1.41.2":
-  version "1.56.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.56.0.tgz#f40be9518eefcd00df16e5acb249583392451ca2"
-  integrity sha512-SkkFghWu649AZY3K77SZCx/Gs5plu+OfmcWzZ4vw3DJH2eV4tD9XMUVHXsK1+u2NOskzDVqZjCDrMtsAkdW7KA==
+  version "1.60.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.60.0.tgz#28b373d462a88b59794d9b59b3542303bbb83ab2"
+  integrity sha512-7qBqs0CVUABXncay9HXmGw6Slz5OyJy4M340I0bkKndtJjCdLSkOs2pCv13VMZvE73+qt8JE4WBzxOYWanV0uQ==
 
 "@types/buble@^0.19.2":
   version "0.19.2"
