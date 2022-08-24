@@ -13,8 +13,8 @@ export default {
     name: '${name}',
     props: {
         size: {
-            type: String,
-            default: '24',
+            type: [Number, String],
+            default: 24,
         }
     },
     render() {
@@ -32,7 +32,8 @@ export default {
 `.trim();
 
 const typingTemplate = `
-import { App, DefineComponent } from '@vue/runtime-core';
+import { App, FunctionalComponent } from '@vue/runtime-core';
+import { SVGAttributes, VNodeProps } from '@vue/runtime-dom';
 
 export declare const Plugin: {
     install(app: App, ...options: any[]): any;
@@ -43,10 +44,10 @@ export declare function install(app: App, ...options: any[]): any;
 export default Plugin;
 
 export type TablerIconProps = {
-    size: string;
+    size?: number | string;
 }
 
-export type TablerIconComponent = DefineComponent<TablerIconProps, {}, any>;
+export type TablerIconComponent = FunctionalComponent<TablerIconProps & SVGAttributes & VNodeProps>;
 `.trim();
 
 const aliases = {
