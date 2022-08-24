@@ -116,10 +116,10 @@ For example:
 Following icon names are replaced to match JavaScript variable name pattern:
 
 | Original           | New                  |
-| ------------------ | -------------------- |
-| 2fa.svg            | TwoFactorAuth        |
+|--------------------|----------------------|
+| 2fa.svg            | TwoFactorAuthIcon    |
 | 3d-cube-sphere.svg | ThreedCubeSphereIcon |
-| 3d-rotate.svg      | ThreedRotateIcon |
+| 3d-rotate.svg      | ThreedRotateIcon     |
 
 ## Icon size
 
@@ -179,4 +179,3 @@ Icon component will be in `icons` directory.
 ## Credits
 
 -   [Tabler Icons](https://tabler-icons.io/) for icon pack
-   
