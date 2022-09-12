@@ -22,6 +22,7 @@ export default {
         const attrs = this.$data.attrs || {};
 
         const allAttrs = {
+            ...this.$attrs,
             width: attrs.width || size,
             height: attrs.height || size,
         }
