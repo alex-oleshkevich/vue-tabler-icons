@@ -1032,10 +1032,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@tabler/icons@^1.41.2":
-  version "1.86.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.86.0.tgz#601910aab8ec43c82da5215725d59cdfc3802333"
-  integrity sha512-lip2sPwOkWOqYtQIGGQ8ZaXynnIpFEDvzXN6RfRe4zuHBtEYZM0Bm9EfFGuKv5kllGjkjyy2386kapLR1JXwiw==
+"@tabler/icons@^1.86.0":
+  version "1.95.1"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.95.1.tgz#d2bdaea4c5f4cfddc8347a89b0ce8c749ccda415"
+  integrity sha512-b3fwRzYwQPKqMT9Vw1AMv2I/uEAwrPgicMeGg9Qvg1mckFvy60iTC4MQkdVlgUeLxdPKDO+yGystfVrQp2OPyA==
 
 "@types/buble@^0.19.2":
   version "0.19.2"

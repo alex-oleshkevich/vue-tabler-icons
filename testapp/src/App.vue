@@ -15,6 +15,9 @@ export default defineComponent({
         },
     },
     methods: {
+        onClick() {
+            alert('clicked');
+        },
         tagName(name:any) {
             return name
                 .replace(/[A-Z]/g, (m:any) => '-' + m.toLowerCase())
@@ -60,6 +63,7 @@ export default defineComponent({
                             :stroke-width="strokeWidth"
                             :is="component"
                             :style="{ color }"
+                            @click="onClick"
                         />
                     </div>
                     <div class="text-sm text-center mt-3">
