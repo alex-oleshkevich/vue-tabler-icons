@@ -20,8 +20,9 @@ export default {
     render() {
         const size = this.$props.size + 'px';
         const attrs = this.$data.attrs || {};
+
         const allAttrs = {
-            ...this.$data,
+            ...this.$attrs,
             width: attrs.width || size,
             height: attrs.height || size,
         }
