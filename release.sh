@@ -19,7 +19,7 @@ PACKAGE_VERSION=$(grep -o  -P '(?<=version": ").*(?=")' package.json)
 MESSAGE="Release $PACKAGE_VERSION (sync with @tabler/icons@$UPSTREAM_VERSION)"
 
 git add -A
-git ci -a -m $MESSAGE
-echo 'git tag "v$PACKAGE_VERSION"'
-# git push
-# git push --tags
+git commit -a -m "$MESSAGE"
+git tag "v$PACKAGE_VERSION"
+git push
+git push --tags
