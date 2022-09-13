@@ -8,7 +8,7 @@ if git status | grep yarn.lock; then
     echo "Icons updated to $UPSTREAM_VERSION"
 else
     echo 'Icons up to date.'
-    # exit
+    exit
 fi
 
 # check it compiles
@@ -20,10 +20,10 @@ git checkout -- package.json
 
 yarn version --patch --no-git-tag-version
 PACKAGE_VERSION=$(grep -o  -P '(?<=version": ").*(?=")' package.json)
-MESSAGE="Release $PACKAGE_VERSION (sync with @tabler/icons = $UPSTREAM_VERSION)"
+MESSAGE="Release $PACKAGE_VERSION (sync with @tabler/icons v$UPSTREAM_VERSION)"
 
 git add -A
 git commit -a -m "$MESSAGE"
 git tag "v$PACKAGE_VERSION"
-# git push
-# git push --tags
+git push
+git push --tags
