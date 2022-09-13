@@ -16,7 +16,7 @@ export type TablerIconProps = {
 export type TablerIconComponent = FunctionalComponent<TablerIconProps & SVGAttributes & VNodeProps>;
 
 export const TwoFactorAuthIcon: TablerIconComponent;
-export const 3dCubeSphereOffIcon: TablerIconComponent;
+export const ThreedCubeSphereOffIcon: TablerIconComponent;
 export const ThreedCubeSphereIcon: TablerIconComponent;
 export const ThreedRotateIcon: TablerIconComponent;
 export const AB2Icon: TablerIconComponent;
