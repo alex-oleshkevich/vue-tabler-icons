@@ -34,3 +34,11 @@ jobs:
               run: npm run release
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
+
+            -   name: Archive build artifacts
+                uses: actions/upload-artifact@v3
+                with:
+                    name: package.zip
+                    retention-days: 7
+                    path: |
+                        dist
