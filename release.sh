@@ -18,7 +18,7 @@ yarn dist || exit 1
 # drop any unwanted changes to package.json
 git checkout -- package.json
 
-yarn version --patch --no-git-tag-version
+yarn version --minor --no-git-tag-version
 PACKAGE_VERSION=$(grep -o  -P '(?<=version": ").*(?=")' package.json)
 MESSAGE="Release $PACKAGE_VERSION (sync with @tabler/icons v$UPSTREAM_VERSION)"
 
