@@ -4,6 +4,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const { pascalCase } = require("pascal-case");
 const babel = require('@babel/core');
+const { parse, stringify } = require('svgson');
 
 const PATH = path.resolve("node_modules/@tabler/icons/icons");
 
@@ -58,36 +59,51 @@ const aliases = {
     "3d-rotate.svg": "threed-rotate.svg",
 };
 
-fs.readdir(PATH, (err, items) => {
+build();
+
+async function build() {
+    const items = fs.readdirSync(PATH)
+        .filter((name) => name.endsWith(".svg"))
+
     let index = [];
     let typings = [];
-    items
-        .filter((name) => name.endsWith(".svg"))
-        .forEach((name, pos) => {
-            process.stdout.write(`Building ${pos}/${items.length}: ` + name.padEnd(42) + '\r');
 
-            let content = fs.readFileSync(`${PATH}/${name}`, "utf-8").replace(/\n/gm, " ");
+    for (let pos = 0; pos < items.length; pos++) {
+        let name = items[pos];
 
-            // make name
-            if (name in aliases) name = aliases[name];
-            let nameCamel = pascalCase(name.replace(".svg", "")).replace(/_(\d)/g, "$1") + "Icon";
+        process.stdout.write(`Building ${pos}/${items.length}: ` + name.padEnd(42) + '\r');
 
-            // create and transform component
-            let component = componentTemplate(nameCamel, content);
-            const compiled = babel.transform(component, {plugins: ['@vue/babel-plugin-jsx']}).code;
+        let content = fs.readFileSync(`${PATH}/${name}`, "utf-8").replace(/\n/gm, " ");
 
-            // write icon component
-            let filePath = path.resolve(`icons/${nameCamel}.js`);
-            fs.ensureDirSync(path.dirname(filePath));
-            fs.writeFileSync(filePath, compiled, "utf-8");
+        let svg = await parse(content);
 
-            index.push(`export { default as ${nameCamel} } from './${nameCamel}.js';`);
-            typings.push(`export const ${nameCamel}: TablerIconComponent;`);
-        });
+        svg.attributes.class = svg.attributes.class
+            .split(' ')
+            .filter(cls => cls !== 'icon')
+            .join(' ');
+
+        content = stringify(svg);
+
+        // make name
+        if (name in aliases) name = aliases[name];
+        let nameCamel = pascalCase(name.replace(".svg", "")).replace(/_(\d)/g, "$1") + "Icon";
+
+        // create and transform component
+        let component = componentTemplate(nameCamel, content);
+        const compiled = babel.transform(component, {plugins: ['@vue/babel-plugin-jsx']}).code;
+
+        // write icon component
+        let filePath = path.resolve(`icons/${nameCamel}.js`);
+        fs.ensureDirSync(path.dirname(filePath));
+        fs.writeFileSync(filePath, compiled, "utf-8");
+
+        index.push(`export { default as ${nameCamel} } from './${nameCamel}.js';`);
+        typings.push(`export const ${nameCamel}: TablerIconComponent;`);
+    }
 
     index.push("");
     typings.push("");
 
     fs.writeFileSync("./icons/index.js", index.join("\n"), "utf-8");
     fs.writeFileSync("./index.d.ts", typingTemplate + "\n\n" + typings.join("\n"), "utf-8");
-});
+}

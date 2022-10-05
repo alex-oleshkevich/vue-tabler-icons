@@ -42,5 +42,8 @@
         "plugins": [
             "@vue/babel-plugin-jsx"
         ]
+    },
+    "dependencies": {
+        "svgson": "^5.2.1"
     }
 }
