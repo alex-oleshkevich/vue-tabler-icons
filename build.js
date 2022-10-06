@@ -47,6 +47,7 @@ export type TablerIconComponent = VueConstructor;
 const aliases = {
     "2fa.svg": "two-factor-auth.svg",
     "3d-cube-sphere.svg": "threed-cube-sphere.svg",
+    "3d-cube-sphere-off.svg": "threed-cube-sphere-off.svg",
     "3d-rotate.svg": "threed-rotate.svg",
 };
 
