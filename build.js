@@ -22,12 +22,11 @@ export default {
         const attrs = this.$data.attrs || {};
 
         const allAttrs = {
-            ...this.$attrs,
             width: attrs.width || size,
             height: attrs.height || size,
         }
 
-        return ${svg.replace(/<svg([^>]+)>/, "<svg$1 {...allAttrs}>")}
+        return ${svg.replace(/<svg([^>]+)>/, "<svg$1 {...allAttrs}>").replace('icon icon-tabler ', 'icon-tabler ')}
     }
 }
 `.trim();
