@@ -33,6 +33,7 @@ jobs:
             - name: Release
               run: npm run release
               env:
+                  NODE_OPTIONS: "--max_old_space_size=4096"
                   NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
 
             -   name: Archive build artifacts
