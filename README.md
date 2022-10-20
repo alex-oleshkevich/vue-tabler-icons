@@ -121,6 +121,7 @@ Following icon names are replaced to match JavaScript variable name pattern:
 | 3d-cube-sphere.svg     | ThreedCubeSphereIcon     |
 | 3d-cube-sphere-off.svg | ThreedCubeSphereIconOff  |
 | 3d-rotate.svg          | ThreedRotateIcon         |
+| 123.svg                | OneTwoThreeRotateIcon    |
 
 ## Icon size
 
