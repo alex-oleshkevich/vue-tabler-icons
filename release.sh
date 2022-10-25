@@ -1,4 +1,5 @@
 !/bin/bash
+set -ex
 
 yarn install
 yarn upgrade @tabler/icons
@@ -21,7 +22,7 @@ git checkout -- package.json
 yarn version --minor --no-git-tag-version
 PACKAGE_VERSION=$(grep -o  -P '(?<=version": ").*(?=")' package.json)
 MESSAGE="Release $PACKAGE_VERSION (sync with @tabler/icons v$UPSTREAM_VERSION)"
-# BRANCH="release-$PACKAGE_VERSION"
+BRANCH="release-$PACKAGE_VERSION"
 REPO=alex-oleshkevich/vue-tabler-icons
 
 git checkout -b $BRANCH
