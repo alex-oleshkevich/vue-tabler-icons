@@ -56,7 +56,7 @@ const aliases = {
     "3d-cube-sphere-off.svg": "threed-cube-sphere-off.svg",
     "3d-rotate.svg": "threed-rotate.svg",
     "123.svg": "onetwotree.svg",
-    "360-view.svg": "view-360.svg",
+    "360-view.svg": "deg360-view.svg",
 };
 
 fs.readdir(PATH, (err, items) => {
