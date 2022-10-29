@@ -31,4 +31,5 @@ git commit -a -m "$MESSAGE"
 git tag "v$PACKAGE_VERSION"
 git push
 git push --tags
-gh pr create -a "@me" -B master -f -R $REPO
+gh pr create -a "@me" -B master -f -R $REPO -t $MESSAGE
+git checkout master
