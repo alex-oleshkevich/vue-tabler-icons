@@ -77,7 +77,9 @@ _Note: this usage is not recommended as it cannot be tree-shaken._
 import Vue from "vue";
 import VueTablerIcons from "vue-tabler-icons";
 
-Vue.use(VueTablerIcons);
+Vue.use(VueTablerIcons, {
+    iconClass: 'icon', // add a class to each icon
+});
 ```
 
 Now you can use icons without importing them:
@@ -95,7 +97,9 @@ The library doesn't automatically registers itself so you need to do it manually
 
 ```html
 <script>
-    Vue.use(VueTablerIcons);
+    Vue.use(VueTablerIcons, {
+        iconClass: 'icon', // add a class to each icon
+    });
 </script>
 ```
 
