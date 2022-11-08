@@ -20,10 +20,12 @@ export default {
     render() {
         const size = this.$props.size + 'px';
         const attrs = this.$data.attrs || {};
+        const iconClass = this.$tiConfig.iconClass;
 
         const allAttrs = {
             width: attrs.width || size,
             height: attrs.height || size,
+            class: iconClass,
         }
 
         return ${svg.replace(/<svg([^>]+)>/, "<svg$1 {...allAttrs}>").replace('icon icon-tabler ', 'icon-tabler ')}
