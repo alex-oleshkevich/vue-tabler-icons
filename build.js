@@ -57,6 +57,7 @@ const aliases = {
     "3d-rotate.svg": "threed-rotate.svg",
     "123.svg": "onetwotree.svg",
     "360-view.svg": "deg360-view.svg",
+    "360.svg": "deg360.svg",
     "24-hours.svg": "twenty-four-hours.svg",
 };
 
