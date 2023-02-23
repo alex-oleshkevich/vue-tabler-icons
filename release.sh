@@ -25,6 +25,7 @@ MESSAGE="Release $PACKAGE_VERSION (sync with @tabler/icons v$UPSTREAM_VERSION)"
 BRANCH="release-$PACKAGE_VERSION"
 REPO=alex-oleshkevich/vue-tabler-icons
 
+export GITHUB_TOKEN=
 git checkout -b $BRANCH
 git add -A
 git commit -a -m "$MESSAGE"
