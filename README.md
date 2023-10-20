@@ -1,7 +1,7 @@
 # Tabler Icons as Vue 3 components
 
 ![NPM](https://img.shields.io/npm/v/vue-tabler-icons)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alex-oleshkevich/vue-tabler-icons/Test)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/alex-oleshkevich/vue-tabler-icons/test.yml?branch=master)
 ![GitHub](https://img.shields.io/github/license/alex-oleshkevich/vue-tabler-icons)
 ![NPM - Downloads](https://img.shields.io/npm/dm/vue-tabler-icons)
 
